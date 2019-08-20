@@ -7,10 +7,12 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import org.apache.commons.io.FileUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
 import java.nio.charset.Charset;
+import java.time.Instant;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -19,13 +21,16 @@ public class ReportFeedTest {
     @Test
     public void testPaserJsonReport() throws Exception {
         String url = "http://localhost:8983/solr/gettingstarted/update?commit=true";
-        String serviceName = "SampleService";
+        String serviceName = "Match";
         String content = FileUtils.readFileToString(new File(this.getClass().getResource("/cucumber.json").getPath()), Charset.defaultCharset());
         List<CucumberResultReport> resultReports = CucumberReport.getCucumberReport(content);
+        String timeStamp = Instant.now().toString();
+        String buildNumber = "0.4";
         List<Report> reports = new ArrayList<>();
         for(CucumberResultReport resultReport: resultReports){
             for(CucumberElement element: resultReport.getElements()) {
                 Report report = new Report();
+                report.setBuildNumber(buildNumber);
                 report.setScenarioName(element.getName()+element.getDescription());
                 report.setFeatureName(resultReport.getName());
                 List<Result> results = element.getBefore().stream().filter(x->x.getResult() != null).map(CucumberBefore::getResult).collect(Collectors.toList());
@@ -38,6 +43,7 @@ public class ReportFeedTest {
                 Optional<Result> failResultOptional = results.stream().filter(x->x.getStatus().contains("fail")).findFirst();
                 if(failResultOptional.isPresent()) {
                     report.setFailed(true);
+                    report.setShortErrorMessage(failResultOptional.get().getError_message().substring(0, 100));
                     report.setFailureMessage(failResultOptional.get().getError_message());
                     report.setStatus("failed");
                 } else {
@@ -53,9 +59,12 @@ public class ReportFeedTest {
                 List<CucumberTag> tags = element.getTags();
                 report.setTags(tags.stream().map(x->x.getName()).collect(Collectors.toList()));
                 report.setServicename(serviceName);
+                report.setScenario(captureScenario(element));
+                report.setTimeStamp(timeStamp);
                 reports.add(report);
             }
         }
+        reports.addAll(reports.subList(0,110));
         Gson gson = new Gson();
         String json = gson.toJson(reports);
         Map<String, String> headers = new HashMap<>();
@@ -65,5 +74,30 @@ public class ReportFeedTest {
         System.out.println(statusCode);
         System.out.println(entity.getBody().toString());
 
+    }
+
+    private String captureScenario(CucumberElement element) {
+        StringBuilder scenarioSteps = new StringBuilder();
+        scenarioSteps.append(String.format("Scenario: %s",element.getName()));
+        scenarioSteps.append("\n");
+        for(CucumberStep step: element.getSteps()) {
+            scenarioSteps.append(step.getKeyword()+" "+step.getName());
+            scenarioSteps.append("\n");
+        }
+        return scenarioSteps.toString();
+    }
+
+    @Test
+    @Ignore
+    public void deleteData() throws Exception {
+        String url = "http://localhost:8983/solr/gettingstarted/update?stream.body=<delete><query>*:*</query></delete>&commit=true";
+        HttpResponse<JsonNode> response = Unirest.get(url).asJson();
+        System.out.println(response.getStatus());
+        System.out.println(response.getBody().toString());
+    }
+
+    @Test
+    public void test() {
+        System.out.println(Instant.now().toString());
     }
 }
