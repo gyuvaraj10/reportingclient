@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba89abab-ae50-4213-ac35-c84182ea68bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/CSVDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/CucumberElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/CucumberElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gbg/reporting/cucumber/models/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gbg/reporting/cucumber/models/Report.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tests/ReportFeedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tests/ReportFeedTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +22,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="180">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4849#4850#0" expanded="true" />
+                <element signature="e#6285#6286#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,17 +59,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
-              <caret line="6092" column="36" selection-start-line="6092" selection-start-column="29" selection-end-line="6092" selection-end-column="36" />
+            <state relative-caret-position="154">
+              <caret line="11603" column="32" selection-start-line="11603" selection-start-column="25" selection-end-line="11603" selection-end-column="32" />
               <folding>
-                <element signature="e#4#41739#0" />
-                <element signature="e#65#329#0" />
                 <element signature="e#895#1163#0" />
                 <element signature="e#1241#8991#0" />
                 <element signature="e#9009#9424#0" />
                 <element signature="e#9440#19367#0" />
                 <element signature="e#19375#29938#0" />
                 <element signature="e#29946#40936#0" />
+                <element signature="e#41269#41735#0" />
+                <element signature="e#41743#162083#0" />
+                <element signature="e#41776#161295#0" />
                 <element signature="e#43416#44046#0" />
                 <element signature="e#44058#44462#0" />
                 <element signature="e#49448#62498#0" />
@@ -101,6 +97,9 @@
                 <element signature="e#143320#152399#0" />
                 <element signature="e#152407#161289#0" />
                 <element signature="e#161613#162079#0" />
+                <element signature="e#188938#192082#0" />
+                <element signature="e#189918#191771#0" />
+                <element signature="e#191789#192074#0" />
                 <element signature="e#796125#833370#0" />
                 <element signature="e#833374#854691#0" />
               </folding>
@@ -121,6 +120,8 @@
     <findStrings>
       <find>failed</find>
       <find>Outline</find>
+      <find>result</find>
+      <find>skipped</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,8 +145,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/tests/CSVDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testdata.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/CucumberElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java" />
       </list>
     </option>
@@ -169,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -243,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,27 +372,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 42m 42s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 42m 48s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 42m 59s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 43m 04s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 43m 09s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 43m 14s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 43m 23s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 43m 29s.xml">
       <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
     </history-entry>
@@ -401,11 +381,33 @@
     <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.20 at 16h 43m 38s.xml">
       <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 09h 23m 00s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 00m 57s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 01m 23s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 01m 45s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 02m 47s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 04m 38s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 05m 17s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23507462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23773988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -414,14 +416,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43333334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37444445" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37444445" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -439,12 +441,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java</url>
-          <line>67</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>(beforeTime+afterTime+stepTime)/1000000000</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(beforeTime+afterTime+stepTime)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(beforeTime+afterTime+stepTime)*(10^-6)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>beforeTime+afterTime+stepTime</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/utils/CucumberReport.java">
@@ -583,17 +609,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="6092" column="36" selection-start-line="6092" selection-start-column="29" selection-end-line="6092" selection-end-column="36" />
+        <state relative-caret-position="154">
+          <caret line="11603" column="32" selection-start-line="11603" selection-start-column="25" selection-end-line="11603" selection-end-column="32" />
           <folding>
-            <element signature="e#4#41739#0" />
-            <element signature="e#65#329#0" />
             <element signature="e#895#1163#0" />
             <element signature="e#1241#8991#0" />
             <element signature="e#9009#9424#0" />
             <element signature="e#9440#19367#0" />
             <element signature="e#19375#29938#0" />
             <element signature="e#29946#40936#0" />
+            <element signature="e#41269#41735#0" />
+            <element signature="e#41743#162083#0" />
+            <element signature="e#41776#161295#0" />
             <element signature="e#43416#44046#0" />
             <element signature="e#44058#44462#0" />
             <element signature="e#49448#62498#0" />
@@ -620,6 +647,9 @@
             <element signature="e#143320#152399#0" />
             <element signature="e#152407#161289#0" />
             <element signature="e#161613#162079#0" />
+            <element signature="e#188938#192082#0" />
+            <element signature="e#189918#191771#0" />
+            <element signature="e#191789#192074#0" />
             <element signature="e#796125#833370#0" />
             <element signature="e#833374#854691#0" />
           </folding>
@@ -628,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -648,11 +678,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="180">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4849#4850#0" expanded="true" />
+            <element signature="e#6285#6286#0" expanded="true" />
           </folding>
         </state>
       </provider>

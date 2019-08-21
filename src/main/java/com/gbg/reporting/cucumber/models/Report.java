@@ -19,4 +19,5 @@ public class Report {
     private List<String> tags;
     private String timeStamp;
     private String scenario;
+    private long executionTime;
 }

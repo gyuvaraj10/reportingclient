@@ -14,6 +14,7 @@ import java.io.File;
 import java.nio.charset.Charset;
 import java.time.Instant;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class ReportFeedTest {
@@ -25,7 +26,7 @@ public class ReportFeedTest {
         String content = FileUtils.readFileToString(new File(this.getClass().getResource("/cucumber.json").getPath()), Charset.defaultCharset());
         List<CucumberResultReport> resultReports = CucumberReport.getCucumberReport(content);
         String timeStamp = Instant.now().toString();
-        String buildNumber = "0.4";
+        String buildNumber = "0.5";
         List<Report> reports = new ArrayList<>();
         for(CucumberResultReport resultReport: resultReports){
             for(CucumberElement element: resultReport.getElements()) {
@@ -61,6 +62,7 @@ public class ReportFeedTest {
                 report.setServicename(serviceName);
                 report.setScenario(captureScenario(element));
                 report.setTimeStamp(timeStamp);
+                report.setExecutionTime(TimeUnit.NANOSECONDS.toSeconds(captureExecutionTime(element)));
                 reports.add(report);
             }
         }
@@ -85,6 +87,37 @@ public class ReportFeedTest {
             scenarioSteps.append("\n");
         }
         return scenarioSteps.toString();
+    }
+
+    private long captureExecutionTime(CucumberElement element) {
+        List<CucumberBefore> befores = element.getBefore();
+        List<CucumberAfter> afters = element.getAfter();
+        List<CucumberStep> steps = element.getSteps();
+        long beforeTime = 0L;
+        if(befores != null) {
+            for (CucumberBefore before : befores) {
+                if (before.getResult() != null && before.getResult().getDuration() != null) {
+                    beforeTime = beforeTime + Long.parseLong(before.getResult().getDuration());
+                }
+            }
+        }
+        long afterTime = 0L;
+        if(afters != null) {
+            for (CucumberAfter after : afters) {
+                if (after.getResult() != null && after.getResult().getDuration() != null ) {
+                    afterTime = afterTime + Long.parseLong(after.getResult().getDuration());
+                }
+            }
+        }
+        long stepTime = 0L;
+        if(steps != null) {
+            for (CucumberStep step : steps) {
+                if (step.getResult() != null && step.getResult().getDuration() != null ) {
+                    stepTime = stepTime + Long.parseLong(step.getResult().getDuration());
+                }
+            }
+        }
+        return beforeTime+afterTime+stepTime;
     }
 
     @Test
