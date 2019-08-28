@@ -67,7 +67,7 @@ public class ReportFeedTest {
                 report.setScenario(scenario);
                 report.setTimeStamp(timeStamp);
                 report.setExecutionTime(TimeUnit.NANOSECONDS.toSeconds(captureExecutionTime(element)));
-                String id = serviceName+featureName+scenario;
+                String id = serviceName+featureName+scenario+buildNumber;
                 String hexCode = DigestUtils.md5Hex(id);
                 report.setId(hexCode);
                 reports.add(report);
@@ -80,7 +80,7 @@ public class ReportFeedTest {
         HttpResponse<JsonNode> entity = Unirest.post(url).headers(headers).body(json).asJson();
         int statusCode = entity.getStatus();
 
-            System.out.println(statusCode);
+        System.out.println(statusCode);
         System.out.println(entity.getBody().toString());
 
     }

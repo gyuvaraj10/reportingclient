@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba89abab-ae50-4213-ac35-c84182ea68bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/Report.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tests/ReportFeedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tests/ReportFeedTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cucumber.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+            <state relative-caret-position="160">
+              <caret line="69" column="72" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,7 +213,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/e2e/gbg-unified-test-e2e/pom.xml" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AuthenticationPortal/testsuites/gbg-unified-test-authportal/pom.xml" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -343,9 +338,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 01m 45s.xml">
-      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.21 at 10h 02m 47s.xml">
       <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
     </history-entry>
@@ -373,6 +365,9 @@
     <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.28 at 09h 22m 58s.xml">
       <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ReportFeedTest_testPaserJsonReport - 2019.08.28 at 09h 45m 36s.xml">
+      <configuration name="ReportFeedTest.testPaserJsonReport" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -388,13 +383,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.43333334" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6344444" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37444445" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37444445" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -554,16 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/CSVDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gbg/reporting/cucumber/models/CucumberResultReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -621,10 +606,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/CSVDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/ReportFeedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+        <state relative-caret-position="160">
+          <caret line="69" column="72" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
