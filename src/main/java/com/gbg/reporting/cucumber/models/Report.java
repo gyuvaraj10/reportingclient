@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class Report {
+    private String id;
     private String buildNumber;
     private String servicename;
     private String featureName;

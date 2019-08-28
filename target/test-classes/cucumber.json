@@ -1317,6 +1317,348 @@
             "name": "@RESTORE_SERVICE"
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "VerificationHistoryAPISteps.deleteAllTheRequestLogs()"
+            }
+          }
+        ],
+        "line": 74,
+        "name": "1.0.5 - I want to retrieve all the verifications for a given person-id and I have a valid person-id, gbg-correlation-id,",
+        "description": "  a page-size header, page header, a valid token and the usage service is not there and the incident service is initially not there.",
+        "id": "component-tests-for-verify-document-api-service-that-deals-with-incidnet-service;1.0.4---i-want-to-retrieve-all-the-verifications-for-a-given-person-id-and-i-have-a-valid-person-id--gbg-correlation-id-",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "VerificationHistoryAPISteps.bringAllDependentServicesUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "I have headers as defined in path \"src/main/resources/data/verificationhistory/headers/valid_full_headers.csv\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/main/resources/data/verificationhistory/headers/valid_full_headers.csv",
+                  "offset": 35
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iHaveHeadersAsDefinedInPath(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "I have the body defined in path \"src/main/resources/data/verificationhistory/body/complete_body.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/main/resources/data/verificationhistory/body/complete_body.json",
+                  "offset": 33
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iHaveTheBodyAsPath(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "I post the details to the Verification Audit API endpoint \"20\" times with person-id as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 59
+                },
+                {
+                  "val": "1234",
+                  "offset": 88
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iPostTheDetailsToTheVerificationAuditAPIEndpointWithPersonID(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "I verify the \"201\" status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 14
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iVerifyTheStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "I bring down the Usage service with parameters defined in \"src/main/resources/data/mock/usage/api_bringdown.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/main/resources/data/mock/usage/api_bringdown.json",
+                  "offset": 59
+                }
+              ],
+              "location": "MockLabSteps.iBringDownService(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "I bring down the Incident service with parameters defined in \"src/main/resources/data/mock/incident/api_bringdown.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/main/resources/data/mock/incident/api_bringdown.json",
+                  "offset": 62
+                }
+              ],
+              "location": "MockLabSteps.iBringDownService(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "I have headers as defined in path \"src/main/resources/data/verificationhistory/headers/valid_full_headers_with_page_config_as_05.csv\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/main/resources/data/verificationhistory/headers/valid_full_headers_with_page_config_as_05.csv",
+                  "offset": 35
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iHaveHeadersAsDefinedInPath(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "I get all the verifications for a given person-id \"asynchronously\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "asynchronously",
+                  "offset": 51
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iGetAllTheRecordsForAPerson(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "I wait for \"5\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "CommonSteps.waitFor(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1483944500,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "I restore the Incident service with parameters defined in \"src/main/resources/data/mock/incident/api_reset.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/main/resources/data/mock/incident/api_reset.json",
+                  "offset": 59
+                }
+              ],
+              "location": "MockLabSteps.iResetService(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10000567000,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "I wait for \"10\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 12
+                }
+              ],
+              "location": "CommonSteps.waitFor(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 302600,
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "I verify the \"200\" status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "VerificationHistoryAPISteps.iVerifyTheStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1070308800,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "I verify Incident Service for Usage data",
+            "match": {
+              "location": "VerificationHistoryAPISteps.verifyIncidentServiceForUsageData(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "errorCode",
+                  "9002"
+                ]
+              },
+              {
+                "cells": [
+                  "summary",
+                  "Usage service failed"
+                ]
+              },
+              {
+                "cells": [
+                  "statusMessage",
+                  "Usage Service Failed"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083038800,
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "I wait for maximum of \"10\" seconds and verify the message \"sent\" to \"Incident\" Service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 23
+                },
+                {
+                  "val": "sent",
+                  "offset": 59
+                },
+                {
+                  "val": "Incident",
+                  "offset": 69
+                }
+              ],
+              "location": "MockLabSteps.iVerifyService(int,String,String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ServiceName",
+                  "com.gbgplc.VerificationHistory"
+                ]
+              },
+              {
+                "cells": [
+                  "FunctionName",
+                  "retrieveAllVerifications"
+                ]
+              },
+              {
+                "cells": [
+                  "Status",
+                  "Success"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MANUAL"
+          },
+          {
+            "name": "@VerifyDocumentAPI"
+          },
+          {
+            "name": "@ComponentTests"
+          },
+          {
+            "name": "@VerifyDocumentUsage"
+          },
+          {
+            "name": "@FROG_VERIFICATION-HISTORY_GET_ALL_VERIFICATIONS_EXP_HANDLING_INCIDENT_001"
+          },
+          {
+            "name": "@PFDTS-109"
+          },
+          {
+            "name": "@RESTORE_SERVICE"
+          }
+        ]
       }
     ],
     "name": "Component Tests for Verify Document API Service that deals with Incidnet Service",
@@ -2707,6 +3049,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@Manual"
+          },
           {
             "name": "@VerifyDocumentAPI"
           },
@@ -11623,6 +11968,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@Manual"
+          },
           {
             "name": "@Verification-HistoryAPI"
           },
